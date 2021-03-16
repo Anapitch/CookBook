@@ -1,0 +1,25 @@
+<ion-content color="dark">
+  <div></div>
+
+  <div style="text-align: center">
+
+    <div>
+      <ion-card *ngFor="let items of loop">
+        <ion-card >
+          <iframe width="400em" height="350rem" [src]="saveURL" allowfullscreen></iframe><br />
+        </ion-card>
+        <div style="padding: 30px;">
+          <ion-label style="font-size: 30px;">{{items.name}}</ion-label><br /><br />
+        <ion-label style="padding: 50px;">{{items.igd}}</ion-label><br /><br />
+        </div>
+
+      </ion-card>
+    </div>
+    <br />
+  </div>
+  <div >
+    <ion-button style="margin-block-start:10px; padding-block-end: 10px;" expand="block"  size="large" color="dark" (click)="b1()"
+      >BACK</ion-button
+    >
+  </div>
+</ion-content>

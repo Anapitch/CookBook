@@ -1,0 +1,14 @@
+<ion-content>
+  <div class="center">
+    <ion-card class="cl" *ngFor="let to of data" style="height: 250px ; width: 290px">
+      <a (click)="go(to.name)">
+        <img src="{{to.src}}" />
+
+        <ion-card-header>
+          <ion-card-title style="font-size: 30px; text-align: center">{{to.name}}</ion-card-title>
+        </ion-card-header>
+      </a>
+    </ion-card>
+  </div>
+
+</ion-content>

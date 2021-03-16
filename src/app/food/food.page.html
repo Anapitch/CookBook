@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Menu</ion-title>
+  </ion-toolbar>
+    <ion-searchbar style="background-color:rgb(34, 36, 40)
+    ;padding: 30px;" (click)="Search()" ></ion-searchbar>
+</ion-header>
+
+<ion-content color="dark">
+  <a *ngFor="let love of loop">
+    <center>
+    <ion-card style="width: 22rem" (click)="next(love.foodname)">
+      <img
+        style="
+          width: 300px;
+          padding-top: 30px;
+          padding-bottom: 20px;
+        "
+        src="{{love.image}}"
+      /><br />
+
+        <div style="padding-block-end: 20px">
+          <ion-label
+            style="
+              font-size: 25px;
+              margin-left: 35px;
+              padding-inline-end: 40px;
+            "
+            >{{love.foodname}}</ion-label
+          >
+        </div>
+    </ion-card>
+
+  </center>
+  </a>
+
+  <div>
+    <ion-button style="margin-block-start:10px; padding-block-end: 10px;" expand="block"  size="large" color="dark" (click)="back()"
+      >BACK</ion-button>
+  </div>
+</ion-content>
+
+
+
+
+
